@@ -8,26 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-        body {
-            font-family: 'Lexend Deca', sans-serif;
-        }
-    </style>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
 </head>
 
-<body style="background-color: black;">
-
-    <div class="container">
-        <center>
-            <h1 style="color:white;">Rowdy Datathon</h1>
-            <h3 style="color:white;">Let's get rowdy!</h3>
-            <h3 style="color:white;">Feb 26-27, 2022</h3>
-        </center>
-    </div>
-
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
         <a href="#About">About</a>
         <a href="#NSA">Our Partner</a>
         <a href="#Attend">Attend</a>
@@ -35,9 +24,31 @@
         <a href="#Venue">Venue</a>
         <a href="#FAQ">FAQ</a>
         <a href="#Follow">Follow Us!</a>
-        <a href="#Contact">Contact</a>
+        <a href="https://linktr.ee/RowdyDatathon">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <img src="assets/img/logo_white.png" alt="Rowdy Datathon White on Black Logo">
+            <h1>Rowdy Datathon</h1>
+            <h3>Let's get rowdy!</h3>
+            <h3>Feb 26-27, 2022</h3>
+        </div>
     </div>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

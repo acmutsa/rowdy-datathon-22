@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,24 +6,18 @@
     <meta charset="utf-8" />
     <title>Rowdy Datathon</title>
     <link rel="stylesheet" href="rowdydatathonstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-        body {
-            font-family: 'Lexend Deca', sans-serif;
-        }
-        
-    </style>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
 </head>
 
-<body style="background-color: black;">
-
-    <!--- NAVBAR: sticky; dynamic resize with hamburger menu--->
-    <div class="topnav" id="myTopnav">
-        <a class="active" href="#home">Home</a>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
         <a href="#About">About</a>
         <a href="#NSA">Our Partner</a>
         <a href="#Attend">Attend</a>
@@ -30,10 +25,19 @@
         <a href="#Venue">Venue</a>
         <a href="#FAQ">FAQ</a>
         <a href="#Follow">Follow Us!</a>
-
+        <a href="https://linktr.ee/RowdyDatathon">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" style="color:white; background-color: black;"></i>
+            <i class="fa fa-bars"></i>
         </a>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <img src="assets/img/logo_white.png" alt="Rowdy Datathon White on Black Logo">
+            <h1>Rowdy Datathon</h1>
+            <h3>Let's get rowdy!</h3>
+            <h3>Feb 26-27, 2022</h3>
+        </div>
     </div>
 
     <script>
@@ -41,37 +45,11 @@
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
-            }
-            else {
+            } else {
                 x.className = "topnav";
             }
         }
     </script>
-
-
-    <!--- CONTENT SECTIONS 
-    <div class="container">
-        <center>
-            <h1 style="color:white;">Rowdy Datathon</h1>
-            <p style="color:white;">Let's get rowdy!</p>
-            <p style="color:white;">Feb 26-27, 2022</p>
-
-            <h3 style="color:white;" id="About">About</h3>
-            <h3 style="color:white;" id="NSA">In Partnership With the NSA</h3>
-            <h3 style="color:white;" id="Attend">Attend</h3>
-            <h3 style="color:white;" id="Schedule">Schedule</h3>
-            <h3 style="color:white;" id="Venue">Venue</h3>
-            <h3 style="color:white;" id="FAQ">FAQ</h3>
-            <h3 style="color:white;" id="Follow">Follow Us!</h3>
-
-        </center>
-    </div>
--->
-    <!--- FOOTER -->
-    <footer>
-    </footer>
-
 </body>
 
 </html>
-    

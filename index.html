@@ -1,54 +1,82 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Rowdy Datathon</title>
-    <link rel="stylesheet" href="rowdydatathonstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rowdy Datathon</title>
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.ico">
-</head>
+        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="favicon.ico">
 
-<body>
-    <nav class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#About">About</a>
-        <a href="#NSA">Our Partner</a>
-        <a href="#Attend">Attend</a>
-        <a href="#Schedule">Schedule</a>
-        <a href="#Venue">Venue</a>
-        <a href="#FAQ">FAQ</a>
-        <a href="#Follow">Follow Us!</a>
-        <a href="https://linktr.ee/RowdyDatathon">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+        <!-- locally linked resources -->
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/nav.css">
 
-    <div class="container">
-        <div class="hero">
-            <img src="assets/img/logo_white.png" alt="Rowdy Datathon White on Black Logo">
-            <h1>Rowdy Datathon</h1>
-            <h3>Let's get rowdy!</h3>
-            <h3>Feb 26-27, 2022</h3>
-        </div>
-    </div>
+        <!-- imported -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    </head>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-</body>
-
+    <body>
+        <header>
+            <div id="brand"><img src="favicon.ico" alt="Rowdy Datathon Logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Partner</a></li>
+<!--                    <li><a href="#">Schedule</a></li>-->
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">FAQ</a></li>
+<!--                    <li id="register"><a href="#" >Register</a></li>-->
+<!--                    <li id="signup"><a href="#">Register</a></li>-->
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Partner</a></li>
+<!--                    <li><a href="#">Schedule</a></li>-->
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">FAQ</a></li>
+<!--                    <li id="register-mobile"><a href="#" >Register</a></li>-->
+<!--                    <li id="signup-mobile"><a href="#">Signup</a></li>-->
+                </ul>
+            </div>
+        </header>
+        <div id="wave-background"></div>
+        <main>
+            <div class="container">
+                <img src="assets/img/logo_white.png" alt="Rowdy Datathon White on Black Logo">
+                <h1>Rowdy Datathon</h1>
+                <h2>
+                    Let's get rowdy!
+                    <br>
+                    Feb 26-27, 2022
+                </h2>
+            </div>
+        </main>
+        <footer>
+            <a href="https://twitter.com/rowdydatathon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rowdydatathon/"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:team@rowdydatathon.org"><i class="fa fa-envelope"></i></a>
+        </footer>
+        <script src="./assets/js/main.js"></script>
+        <script>
+          VANTA.WAVES({
+            el: '#wave-background',
+            color: 0x111111,
+            waveHeight: 20,
+            shininess: 50,
+            waveSpeed: 1.5,
+            zoom: 0.75
+          })
+        </script>
+    </body>
 </html>

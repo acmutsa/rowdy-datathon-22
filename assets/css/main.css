@@ -5,7 +5,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lexend Deca', sans-serif;
-    /*font-size: 1rem;*/
 }
 
 html {
@@ -26,7 +25,7 @@ h2, footer a {
 body {
     height: 100vh;
     overflow-y: hidden;
-    background-color: #353836;
+    background-color: #000000;
     color: white;
 }
 

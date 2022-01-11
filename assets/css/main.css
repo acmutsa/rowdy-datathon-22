@@ -96,6 +96,11 @@ footer a {
     color: white;
 }
 
+footer p, footer p a {
+    font-size: 10px;
+    line-height: 12px;
+}
+
 footer a:hover {
     color: red;
 }

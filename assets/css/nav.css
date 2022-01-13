@@ -24,13 +24,13 @@ ul li {
     padding: 5px;
     margin-left: 10px;
 }
-
 ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
     border-radius: 5px;
 }
 
+.active,
 ul li a:hover {
     color: red;
 }
@@ -100,7 +100,7 @@ header:has(> .open) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 280px; /* this is not dynamic and will have to be manually set */
+    height: 340px; /* this is not dynamic and will have to be manually set */
 }
 
 .mobile-menu {
@@ -110,6 +110,7 @@ header:has(> .open) {
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
+    opacity: .95;
     background-color: black;
 }
 

@@ -1,0 +1,49 @@
+.constrained {
+    margin-top: 25px;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+div ul {
+    display: unset;
+}
+
+div ul li {
+    margin-left: 0;
+}
+
+div ul li:hover {
+    transform: unset;
+}
+
+.header {
+    background-image: linear-gradient(to right, red, blue);
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.event {
+    display: flex;
+    border-bottom: 1px dotted white;
+}
+
+.event-title {
+    text-align: left;
+    width: 75%;
+    border-right: 1px dotted white;
+}
+
+.event-time {
+    width: 25%;
+}
+
+@media (max-width: 718px) {
+    .constrained {
+        height: 200px;
+    }
+}

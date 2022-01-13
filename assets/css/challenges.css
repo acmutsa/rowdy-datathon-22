@@ -1,0 +1,33 @@
+.constrained {
+    width: 95%;
+    display: flex;
+}
+
+.constrained ul li {
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    padding: 15px;
+}
+
+.constrained li h2 {
+    background-image: linear-gradient(to right, red, purple, blue);
+    font-weight: 900;
+    letter-spacing: 10px;
+    border-radius: 5px;
+}
+
+.constrained li p {
+    margin-top: 12px
+}
+
+.constrained ul li:hover {
+    transform: unset;
+}
+
+@media (max-width: 718px) {
+    h1 {
+        font-size: 45px;
+        line-height: 47px;
+    }
+}

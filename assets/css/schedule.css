@@ -22,7 +22,7 @@ div ul li:hover {
 }
 
 .header {
-    background-image: linear-gradient(to right, red, blue);
+    background-image: linear-gradient(to right, red, purple, blue);
     font-weight: 900;
     letter-spacing: 10px;
 }

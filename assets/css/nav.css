@@ -119,10 +119,10 @@ header:has(> .open) {
 }
 
 .mobile-menu li {
-    margin: 10px 0 10px 0;
+    margin: 3px 0 3px 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1005px) {
     header nav {
         display: none;
     }

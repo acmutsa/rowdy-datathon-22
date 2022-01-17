@@ -16,22 +16,22 @@ ul {
     justify-content: space-around;
 }
 
-ul a {
+header ul a {
     color: white;
 }
 
-ul li {
+header ul li {
     padding: 5px;
     margin-left: 10px;
 }
-ul li:hover {
+header ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
     border-radius: 5px;
 }
 
-.active,
-ul li a:hover {
+header .active,
+header ul li a:hover {
     color: red;
 }
 
@@ -120,6 +120,12 @@ header:has(> .open) {
 
 .mobile-menu li {
     margin: 3px 0 3px 0;
+    /*border-bottom: 1px dotted white;*/
+}
+
+.mobile-menu a {
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1005px) {

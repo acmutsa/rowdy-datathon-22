@@ -14,3 +14,15 @@ answers.forEach((event) => {
     }
   });
 });
+
+const elements = document.getElementsByClassName('accordion__question');
+
+for (let i = 0; i <= elements.length; i++) {
+  elements[i].addEventListener('animationend', function(e) {
+    elements[i].classList.remove('scale');
+  });
+  
+  elements[i].addEventListener('mouseenter', function(e) {
+    elements[i].classList.add('scale');
+  });
+}

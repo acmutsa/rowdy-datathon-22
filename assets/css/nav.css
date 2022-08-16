@@ -1,11 +1,13 @@
+@import './variables.css';
+
 #brand {
     display: flex;
     align-items: center;
 }
 
 #brand img {
-    height: 50px;
-    width: 50px;
+    height: 32px;
+    width: 32px;
 }
 
 ul {
@@ -16,8 +18,24 @@ ul {
     justify-content: space-around;
 }
 
+header {
+    position: sticky;
+    padding: 0 20px;
+    height: 5vh;
+    max-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+header a {
+    text-decoration: none;
+}
+
 header ul a {
-    color: white;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--primary-font-color);
 }
 
 header ul li {
@@ -32,7 +50,7 @@ header ul li:hover {
 
 header .active,
 header ul li a:hover {
-    color: red;
+    color: var(--primary-font-active-color);
 }
 
 #register,
@@ -45,9 +63,10 @@ header ul li a:hover {
 
 #register,
 #register-mobile {
-    border: 1px solid #498afb;
+    border: 1px solid var(--secondary-font-color);
 }
 
+/* signup element potentially not going to be used */
 #signup,
 #signup-mobile {
     border: 1px solid #ff3860;
@@ -60,7 +79,7 @@ header ul li a:hover {
 
 #register a,
 #register-mobile a {
-    color: #498afb;
+    color: var(--secondary-font-color);
 }
 
 #hamburger-icon {
@@ -72,14 +91,16 @@ header ul li a:hover {
 #hamburger-icon div {
     width: 35px;
     height: 3px;
-    background-color: white;
+    background-color: var(--background-color);
     margin: 6px 0;
     transition: 0.4s;
 }
 
+/* 
 header:has(> .open) {
     opacity: 1;
-}
+} 
+*/
 
 .open .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);

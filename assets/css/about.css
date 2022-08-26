@@ -1,0 +1,7 @@
+/* some decent break points, lots of calls might be repeated */
+@media (max-width: 718px) {
+    .about p {
+        font-size: .7rem;
+        line-height: .82rem;
+    }
+}

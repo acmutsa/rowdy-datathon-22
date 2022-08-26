@@ -29,6 +29,7 @@
     }
     
     .partners img {
+        width: 150px;
         padding: .35rem;
     }
 
@@ -44,6 +45,10 @@
 
     .partners li {
         flex-basis: 50%;
+    }
+
+    .partners img {
+        width: 250px;
     }
 
     .partners .small-logo {

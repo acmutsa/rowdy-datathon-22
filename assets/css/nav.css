@@ -46,7 +46,6 @@ header ul li {
 header ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
-    border-radius: 5px;
 }
 
 header .active,
@@ -59,7 +58,7 @@ header ul li a:hover {
 #signup,
 #signup-mobile {
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 2px 8px;
 }
 
 #register,
@@ -150,7 +149,7 @@ header:has(> .open) {
     text-align: center;
 }
 
-@media only screen and (max-width: 1005px) {
+@media only screen and (max-width: 718px) {
     header nav {
         display: none;
     }

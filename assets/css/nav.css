@@ -88,19 +88,15 @@ header ul li a:hover {
     cursor: pointer;
 }
 
-#hamburger-icon div {
+#hamburger-icon .bar1,
+#hamburger-icon .bar2,
+#hamburger-icon .bar3 {
     width: 35px;
     height: 3px;
     background-color: var(--background-color);
     margin: 6px 0;
     transition: 0.4s;
 }
-
-/* 
-header:has(> .open) {
-    opacity: 1;
-} 
-*/
 
 .open .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
@@ -121,17 +117,30 @@ header:has(> .open) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 340px; /* this is not dynamic and will have to be manually set */
+}
+
+.open .mobile-menu-bg {
+    display: unset;
 }
 
 .mobile-menu {
+    list-style: none;
     display: none;
     position: absolute;
     top: 50px;
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
-    opacity: .95;
+}
+
+.mobile-menu-bg {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    opacity: .7;
     background-color: black;
 }
 

@@ -115,6 +115,11 @@ footer a:hover {
 
     .inner {
         text-align: center;
+        max-height: 60vh;
+    }
+
+    .inner img {
+        width: 150px;
     }
 
     footer a {

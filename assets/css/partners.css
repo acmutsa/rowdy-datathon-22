@@ -1,3 +1,65 @@
 .partners img {
     padding: 1rem;
 }
+
+.partners {
+    display: flex;
+    list-style-type: none;
+  }
+  
+.partners li {
+    flex: auto;
+}
+
+.partners .small-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* some decent break points, lots of calls might be repeated */
+@media (max-width: 718px) {
+    .partners {
+        flex-wrap: wrap;
+    }
+
+    .partners li {
+        flex-basis: 50%;
+    }
+    
+    .partners img {
+        padding: .35rem;
+    }
+
+    .partners .small-logo {
+        display: unset;
+    }
+}
+
+@media (min-width:718px) and (max-width:1023px) {
+    .partners {
+        flex-wrap: wrap;
+    }
+
+    .partners li {
+        flex-basis: 50%;
+    }
+
+    .partners .small-logo {
+        display: unset;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1279px) {
+    .partners {
+        flex-wrap: wrap;
+    }
+
+    .partners li {
+        flex-basis: 50%;
+    }
+
+    .partners .small-logo {
+        display: unset;
+    }
+}

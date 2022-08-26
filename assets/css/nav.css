@@ -10,7 +10,8 @@
     width: 32px;
 }
 
-ul {
+nav ul,
+.mobile-menu {
     list-style: none;
     height: 100%;
     display: flex;
@@ -21,7 +22,7 @@ ul {
 header {
     position: sticky;
     padding: 0 20px;
-    height: 5vh;
+    height: 7vh;
     max-height: 70px;
     display: flex;
     justify-content: space-between;

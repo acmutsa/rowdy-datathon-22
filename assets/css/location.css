@@ -1,3 +1,5 @@
+@import './variables.css';
+
 iframe {
     margin-top: 10px;
     width: 40%;
@@ -12,7 +14,11 @@ iframe {
 }
 
 a {
-    color: red;
+    color: var(--primary-font-color);
+}
+
+a:hover {
+    color: var(--secondary-font-color);
     text-decoration: none;
 }
 

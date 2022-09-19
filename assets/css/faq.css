@@ -1,35 +1,11 @@
 @import './variables.css';
 
-#limiter::-webkit-scrollbar {
-    width: 5px;
-}
-
-#limiter::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px #ff000030;
-}
-
-#limiter::-webkit-scrollbar-thumb {
-    background-color: var(--background-color);
-    border-radius: 10px;
-}
-
-#limiter {
-    height: 500px;
-    overflow: hidden;
-    overflow-y: scroll;
-    max-width: 1500px;
-}
-
 .accordion {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
-
-/* .accordion__question {
-    display: inline-block;
-} */
 
 .accordion__question p {
     margin: 5px;
@@ -68,9 +44,6 @@
 }
 
 @media (max-width: 718px) {
-    #limiter {
-        height: 58vh;
-    }
     .accordion__answer p {
         font-size: 14px;
         line-height: 16px;
@@ -82,9 +55,7 @@
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
-    #limiter {
-        height: 65vh;
-    }
+    /* not currently used */
 }
 
 @keyframes scaling {

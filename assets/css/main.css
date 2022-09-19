@@ -25,6 +25,11 @@ h2, footer a {
     line-height: 34px;
 }
 
+h3 {
+    font-size: 22px;
+    line-height: 24px;
+}
+
 body {
     color: var(--background-color);
 }
@@ -120,6 +125,27 @@ footer a:hover {
     color: var(--primary-font-hover-color)
 }
 
+/* Limited Container */
+#limiter::-webkit-scrollbar {
+    width: 5px;
+}
+
+#limiter::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #ff000030;
+}
+
+#limiter::-webkit-scrollbar-thumb {
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+#limiter {
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-width: 1500px;
+}
+
 /* some decent break points, lots of calls might be repeated */
 @media (max-width: 718px) {
     html {
@@ -136,6 +162,11 @@ footer a:hover {
         line-height: 24px;
     }
 
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
     .inner {
         text-align: center;
         max-height: 60vh;
@@ -149,6 +180,10 @@ footer a:hover {
         font-size: 30px;
         line-height: 32px;
     }
+
+    #limiter {
+        height: 58vh;
+    }
 }
 
 @media (min-width:718px) and (max-width:1023px) {
@@ -161,6 +196,11 @@ footer a:hover {
         font-size: 32px;
         line-height: 34px;
     }
+
+    h3 {
+        font-size: 22px;
+        line-height: 24px;
+    }
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
@@ -172,5 +212,14 @@ footer a:hover {
     h2, footer a {
         font-size: 32px;
         line-height: 34px;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    #limiter {
+        height: 62vh;
     }
 }
